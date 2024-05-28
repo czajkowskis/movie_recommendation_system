@@ -1,0 +1,70 @@
+\documentclass{pprai}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{txfonts}
+\usepackage{url}
+\usepackage{algpseudocode}
+
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}[definition]{Theorem}
+\newtheorem{corollary}[definition]{Corollary}
+\newtheorem{proposition}[definition]{Proposition}
+\newtheorem{example}[definition]{Example}
+
+\title{Recommendation system based on K-means clustering and association rules}
+\headtitle{Recommendation system based on K-means clustering and association rules}
+
+\input{pprai_proc.inc}
+
+\author{Magdalena Augustyniak, Szymon Czajkowski, \\ Laura Sałata, Martyna Stasiak}
+\headauthor{Magdalena Augustyniak, Szymon Czajkowski, Laura Sałata, Martyna Stasiak}
+\affiliation{%
+Poznan University of Technology\\
+Faculty of Computing and Telecommunications\\
+Piotrowo 3, 60-965 Poznan, Poland\\
+}
+
+\keywords{recommender systems, data mining, association rules}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+%%% 100 words
+\input{Chapters/abstract}
+\end{abstract}
+
+\section{Introduction}
+\input{Chapters/introduction}
+
+\section{Related Work}
+\input{Chapters/related}
+
+\section{Dataset}
+\input{Chapters/dataset}
+
+\section{Algorithm}
+\input{Chapters/algorithm}
+
+% \section{Evaluation}
+% \input{Chapters/evaluation}
+
+\section{Results}
+\input{Chapters/evaluation}
+
+\section{Conclusions}
+\input{Chapters/conclusions}
+
+% conference papers do not normally have an appendix
+
+
+%%% use bibtex to generate your references in ``pprai.bib'' file
+
+\bibliography{pprai}
+\bibliographystyle{pprai}
+
+\end{document}

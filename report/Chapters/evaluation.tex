@@ -1,0 +1,23 @@
+We compared the performance of our system with 3 simpler methods:
+
+\begin{enumerate}
+    \item \textbf{Global Mean} - the rating returned for every user-movie pair is equal to the mean of all ratings in the dataset
+    \item \textbf{Movie Mean} -  the rating returned for every user-movie pair is equal to the mean of all ratings in the dataset related to the specific movie
+    \item \textbf{User Mean} - the rating returned for every user-movie pair is equal to the mean of all ratings in the dataset related given by the specific user
+\end{enumerate}
+
+Every approach was evaluated using 10-fold cross-validation. The results of the tests are presented in the table below.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+System                                & Mean Absolute Error \\ \hline
+Global Mean                           & 0.8498              \\ \hline
+Movie Mean                            & 0.7709              \\ \hline
+User Mean                             & 0.7500              \\ \hline
+K-means clustering + association rules & 0.7293              \\ \hline
+\end{tabular}
+\caption{The table presenting the evaluation results for 3 baseline metrics and proposed system based on K-means clustering and association rules}
+\label{tab:my-table}
+\end{table}
