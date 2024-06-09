@@ -26,7 +26,7 @@ Then run the following command to install required dependencies and prepare the 
 bash setup.sh
 ```
 
-You can also run the command present in the script youreself instead:
+You can also run the commands present in the script youreself instead:
 
 ```bash
 pip install -r requirements.txt
